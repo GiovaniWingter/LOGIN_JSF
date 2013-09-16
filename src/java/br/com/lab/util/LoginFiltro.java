@@ -29,7 +29,7 @@ public class LoginFiltro implements Filter{
 
         if(Boolean.parseBoolean(sessao.getAttribute("usuariologado").toString()) == false){ 
             System.out.println("USUÁRIO NÃO AUTORIZADO");   //somente para acompanhamento no console        
-            ((HttpServletResponse) response).sendRedirect("/LOGIN/login.jsf");  
+            ((HttpServletResponse) response).sendRedirect("/LOGIN_JSF_BD/login.jsf");  
         }  
         else{  
             System.out.println("USUÁRIO LOGADO");    //somente para acompanhamento no console     

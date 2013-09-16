@@ -4,6 +4,7 @@
  */
 package br.com.lab.dao;
 
+import br.com.lab.util.CripografiatUtil;
 import java.sql.Connection;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
@@ -31,7 +32,7 @@ public class FuncionarioDAO {
                 try{
                     statement = conn.prepareStatement(AUTENTICAR_FUNCIONARIO);
                     statement.setString(1, nome);
-                    statement.setString(2, senha);
+                    statement.setString(2, CripografiatUtil.encripta(senha));
                     result = statement.executeQuery();
                     if(result.next()){
                         numReg = result.getInt("total");
