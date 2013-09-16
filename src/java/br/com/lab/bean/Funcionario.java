@@ -2,7 +2,6 @@
 
 package br.com.lab.bean;
 
-import br.com.lab.util.CripografiatUtil;
 import javax.faces.bean.ManagedBean;
 import javax.faces.bean.RequestScoped;
 
