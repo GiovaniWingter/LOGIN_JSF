@@ -1,0 +1,22 @@
+<ui:composition 
+    xmlns="http://www.w3.org/1999/xhtml"
+    xmlns:f="http://java.sun.com/jsf/core"
+    xmlns:h="http://java.sun.com/jsf/html"    
+    xmlns:ui="http://java.sun.com/jsf/facelets">
+    
+                <nav>    
+                    <h4>Gerenciamento</h4>
+                    <ul>
+                        <li class="active"><a href="#">Cadastro</a>
+                            <ul>
+                                <li><h:link value="Contatos" outcome="listacontato"/></li>
+                                <li><h:link value="Funcionários" outcome="listafuncionario"/></li>
+                                <li><h:link value="Clientes" /></li>
+                                <li><h:link value="Produtos" /></li>
+                                <li><h:link value="Promoções" /></li>
+                            </ul>
+                        </li>
+                        <li><h:form><h:commandLink  action="#{FuncionarioController.logOut()}">Sair</h:commandLink></h:form></li>
+                    </ul>
+                </nav>
+</ui:composition>
