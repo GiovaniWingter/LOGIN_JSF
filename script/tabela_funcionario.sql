@@ -41,12 +41,12 @@ INSERT INTO [dbo].[funcionario]
            ,[login_funcionario]
            ,[senha_funcionario])
      VALUES
-           ("Joca",
-           ,"M"
-           ,"12345678901"
-           ,"121231234"
-           ,"joca@gmail.com"
-           ,"joca"
-           ,"A6xnQhbz4Vx2HuGl4lXwZ5U2I8iziLRFnhP5eNfIRvQ=")
+           ('Joca'
+           ,'M'
+           ,'12345678901'
+           ,'121231234'
+           ,'joca@gmail.com'
+           ,'joca'
+           ,'A6xnQhbz4Vx2HuGl4lXwZ5U2I8iziLRFnhP5eNfIRvQ=')
 					
 GO
